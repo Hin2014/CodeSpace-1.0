@@ -1,23 +1,48 @@
 # CodeSpace-1.0
+# DexPixel - Mini programa en Python 🎮
+
+def banner():
+    print("=" * 40)
+    print("🚀 PROYECTO: DEXPIXEL SYSTEM")
+    print("🎮 Estado: ONLINE")
+    print("=" * 40)
+
 def main():
-    print("🚀 Hola desde el mundo del coding y el SWF!")
-    nombre = input("¿Cómo te llamas? 🤔: ").strip()
+    banner()
+
+    print("\n👾 Bienvenido al sistema DexPixel")
+    
+    nombre = input("Introduce tu nombre: ").strip()
 
     if not nombre:
-        nombre = "Jugador/a"
+        nombre = "dexpixel"
 
-    print(f"Bienvenido/a, {dexpixel}! 🎮✨")
+    print(f"\n✨ Acceso concedido, {nombre}")
+    print("🧠 Iniciando módulo de experiencia...")
+    
+    nivel = 1
+    exp = 0
+
+    print(f"\n📊 Estado inicial:")
+    print(f"- Nivel: {nivel}")
+    print(f"- EXP: {exp}")
+
+    print("\n🎯 Misión: Sigue aprendiendo Python")
+
+    accion = input("\n¿Quieres ganar experiencia? (si/no): ").lower()
+
+    if accion == "si":
+        exp += 50
+        nivel += 1
+        print("\n⚡ ¡EXP ganada!")
+    else:
+        print("\n😐 Sin cambios en tu progreso")
+
+    print(f"\n📊 Estado final:")
+    print(f"- Nivel: {nivel}")
+    print(f"- EXP: {exp}")
+
+    print("\n👋 Fin del programa DexPixel")
 
 if __name__ == "__main__":
     main()
-# 🚀 Python Codespaces Demo
-
-Este es un proyecto simple en Python pensado para ejecutarse en **GitHub Codespaces** o cualquier entorno local.
-
----
-
-## 📌 Descripción
-
-El script muestra un saludo interactivo en consola y pide el nombre del usuario para personalizar la respuesta.
-
----
